@@ -5,7 +5,7 @@
    - Cross-origin (Tailwind CDN): cache first, then network
    Bump CACHE_VERSION whenever you change index.html / app.js. */
 
-const CACHE_VERSION = 'v1.1.0';
+const CACHE_VERSION = 'v1.2.0';
 const SHELL_CACHE = `daily-log-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `daily-log-runtime-${CACHE_VERSION}`;
 
