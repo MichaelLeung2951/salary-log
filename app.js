@@ -1,5 +1,5 @@
 /* ============================================================
-   Daily Log — personal salary tracker
+   Salary Tracking — personal daily salary tracker
    Vanilla JS, localStorage, offline-first.
    ============================================================ */
 (function () {
@@ -287,7 +287,7 @@
       settings: state.settings,
       records: state.records
     };
-    download('daily-log-' + todayKey() + '.json', JSON.stringify(payload, null, 2), 'application/json');
+    download('salary-tracking-' + todayKey() + '.json', JSON.stringify(payload, null, 2), 'application/json');
     toast('Backup exported');
   }
 
@@ -307,7 +307,7 @@
     });
     if (rows.length === 1) { toast('Nothing to export yet'); return; }
     var csv = rows.map(function (r) { return r.map(csvCell).join(','); }).join('\r\n');
-    download('daily-log-' + todayKey() + '.csv', csv, 'text/csv');
+    download('salary-tracking-' + todayKey() + '.csv', csv, 'text/csv');
     toast('CSV exported');
   }
 

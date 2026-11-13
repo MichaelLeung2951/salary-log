@@ -1,6 +1,6 @@
 {
-  "name": "Daily Log",
-  "short_name": "Daily Log",
+  "name": "Salary Tracking",
+  "short_name": "Salary Log",
   "description": "Record your working hours each day and see your salary add up. Works offline.",
   "lang": "en",
   "dir": "ltr",

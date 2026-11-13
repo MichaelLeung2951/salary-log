@@ -1,11 +1,11 @@
-/* Daily Log — Service Worker
+/* Salary Tracking — Service Worker
    Strategy:
    - App shell (navigation): network first, fall back to cached index.html
    - Same-origin assets: stale-while-revalidate
    - Cross-origin (Tailwind CDN): cache first, then network
    Bump CACHE_VERSION whenever you change index.html / app.js. */
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.1.0';
 const SHELL_CACHE = `daily-log-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `daily-log-runtime-${CACHE_VERSION}`;
 
